@@ -9,7 +9,7 @@ public class DepartmentServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DepartmentServiceApplication.class, args);
 
-		System.out.println("Hello");
+		System.out.println("Hello from Department");
 	}
 
 }
