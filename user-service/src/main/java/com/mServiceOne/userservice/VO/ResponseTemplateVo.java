@@ -1,6 +1,6 @@
 package com.mServiceOne.userservice.VO;
 
-import com.mServiceOne.userservice.entity.User;
+import com.mServiceOne.userservice.entity.Users;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ResponseTemplateVo {
 
-    private User user;
+    private Users users;
     private Department department;
 
 }

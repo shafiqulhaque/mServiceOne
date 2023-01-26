@@ -1,9 +1,11 @@
 package com.mServiceOne.userservice.repository;
 
-import com.mServiceOne.userservice.entity.User;
+import com.mServiceOne.userservice.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<User, Long>{
+@Repository
+public interface UserRepository extends JpaRepository<Users, Long>{
 
-    User findByUserId(Long userId);
+    Users findByUserId(Long userId);
 }
