@@ -30,7 +30,7 @@ public class UsersService {
         Users users = userRepository.findByUserId(userId);
 
         Department department =
-                restTemplate.getForObject("http://localhost:9001/departments/" + users.getDepartmentId() ,
+                restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + users.getDepartmentId() ,
                         Department.class);
 
         vo.setUsers(users);
