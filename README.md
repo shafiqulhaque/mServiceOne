@@ -4,4 +4,5 @@ mServiceOne
  ## Client
  ## Service Registry
  ## API getway
+ ## Hystrix Circuit Breaker
  ## Cloud Config Server
