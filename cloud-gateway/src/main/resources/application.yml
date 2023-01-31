@@ -29,7 +29,7 @@ spring:
 
 hystrix:
   command:
-    fallback:
+    fallbackcmd:
       execution:
         isolation:
           thread:
@@ -41,12 +41,3 @@ management:
     web:
       exposure:
         include: hystrix.stream
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
