@@ -1,4 +1,4 @@
-server:
+ server:
   port: 9191
 
 spring:
@@ -11,6 +11,11 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
+          filters:
+            - name: CircuitBreaker
+              args:
+              name: USER-SERVICE
+              fallbackuri: forward/userServiceFallBack
         - id: DEPARTMENT-SERVICE
           uri: lb://DEPARTMENT-SERVICE
           predicates:
